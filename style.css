@@ -37,12 +37,13 @@ body {
     z-index: 1;
 }
 .header {
-    margin-top: 0;
-    position: fixed;
+    margin: 4rem auto 4rem auto;
     width: 100%;
-    height: 5rem;
+    min-width: 1024px;
     background: var(--bg-color);
-    z-index: 10;
+    z-index: 5;
+    display: grid;
+    justify-content: center;
 }
 .header-container {
     width: 80%;
@@ -51,6 +52,7 @@ body {
     justify-content: left;
     align-items: center;
     gap: 7.2rem;
+    height: 10rem;
 }
 
 nav {
@@ -408,177 +410,4 @@ footer {
     color: var(--bg-color);
     background-color: var(--text-color);
     transition: .5s ease-in;
-}
-
-/* Estilos para 320px a 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .header-container {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-    nav {
-        grid-template-columns: 1fr;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .nav a {
-        font-size: 1rem;
-    }
-    
-    .home .container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .about {
-        margin: 2rem 1rem;
-        padding: 1rem;
-    }
-    
-    .skills-h, .works-h, .about-h {
-        font-size: 1.2rem;
-    }
-    
-    .cont-skills a {
-        font-size: 3rem;
-    }
-    
-    .cont-footer {
-        grid-template-columns: 1fr;
-    }
-}
-/* Estilos para 481px a 768px */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .header-container {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-    nav {
-        grid-template-columns: 1fr;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .nav a {
-        font-size: 1.2rem;
-    }
-    
-    .home .container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .about {
-        margin: 3rem 2rem;
-        padding: 1.5rem;
-    }
-    
-    .skills-h, .works-h, .about-h {
-        font-size: 1.3rem;
-    }
-    
-    .cont-skills a {
-        font-size: 3.5rem;
-    }
-    
-    .cont-footer {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Estilos para 769px a 1024px */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .header {
-        margin: 0;
-        width: 50%;
-    }
-    .header-container {
-        width: 30%;
-    }
-    .header-container .logo{
-        font-size: 1.5rem;
-    }
-    
-    nav {
-        grid-template-columns: repeat(5, 1fr);
-        text-align: center;
-    }
-    
-    .nav a {
-        font-size: 1.3rem;
-    }
-    
-    .home .container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    
-    .about {
-        margin: 5rem 3rem;
-        padding: 2rem;
-    }
-    
-    .skills-h, .works-h, .about-h {
-        font-size: 1.4rem;
-    }
-    
-    .cont-skills a {
-        font-size: 4rem;
-    }
-    
-    .cont-footer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-/* Estilos para 1025px a 1200px */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .header-container {
-        width: 75%;
-    }
-    
-    nav {
-        grid-template-columns: repeat(5, 1fr);
-        text-align: center;
-    }
-    
-    .nav a {
-        font-size: 1.4rem;
-    }
-    
-    .home .container {
-        grid-template-columns: 1fr 2fr;
-        gap: 2.5rem;
-    }
-    
-    .about {
-        margin: 6rem 4rem;
-        padding: 2.5rem;
-    }
-    
-    .skills-h, .works-h, .about-h {
-        font-size: 1.5rem;
-    }
-    
-    .cont-skills a {
-        font-size: 4.5rem;
-    }
-    
-    .cont-footer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* Estilos para pantallas más grandes de 1200px */
-@media only screen and (min-width: 1201px) {
-    
 }
