@@ -359,16 +359,16 @@ input:checked + label .description{
     transform: translateX(0) !important; 
 }
 .card[for="c1"] {
-    background-image: url(/Calcu1.JPG);
+    background-image: url(Calcu1.JPG);
 }
 .card[for="c2"] {
-    background-image: url(/MMP1.JPG);
+    background-image: url(MMP1.JPG);
 }
 .card[for="c3"] {
-    background-image: url(/Wapp1.JPG);
+    background-image: url(Wapp1.JPG);
 }
 .card[for="c4"] {
-    background-image: url(/Figma1.JPG);
+    background-image: url(Figma1.JPG);
 }
 
 footer {
@@ -377,7 +377,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1.1rem;
+
 }
 .cont-footer{
     text-align: center;
@@ -396,7 +396,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem ;
     color: var(--text-color);
     width: 4rem;
     height: 4rem;
@@ -411,3 +410,4 @@ footer {
     background-color: var(--text-color);
     transition: .5s ease-in;
 }
+
