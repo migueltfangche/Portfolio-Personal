@@ -29,48 +29,35 @@ body {
     margin-top: 0;
     transition: background-color 0.5s ease;
     scroll-snap-type: y mandatory;
-    scroll-padding-top: 10rem; 
+    scroll-padding-top: 10rem;
     z-index: 1;
 }
+.main-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    box-sizing: border-box;
+  }
 .section {
     position: relative;
     z-index: 1;
 }
 .header {
-    margin: 4rem auto 4rem auto;
     width: 100%;
-    min-width: 1024px;
-    background: var(--bg-color);
-    z-index: 5;
-    display: grid;
-    justify-content: center;
+    max-width: 1024px;
+    margin: 1rem;
 }
 .header-container {
-    width: 80%;
-    display: grid;
-    grid-template-columns: auto 2fr;
-    justify-content: left;
-    align-items: center;
-    gap: 7.2rem;
-    height: 10rem;
+    margin: 0;
 }
 
 nav {
-    position: relative; 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-    background:transparent;
-    border-radius: 8px;
-    height: auto;
 }
 nav a {
-    margin: 0 1rem; 
-    padding: 1rem; 
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: color 0.4s ease-in-out; 
     font-weight: 500;
     z-index: 1; 
@@ -81,9 +68,9 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4.5rem;
-    width: 6.8rem;
-    border: 3px solid var(--text-color);
+    height: 3.2rem;
+    width: 4rem;
+    border: 2px solid var(--text-color);
     border-radius: 0px 25px;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
@@ -96,15 +83,17 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
-    width: 15rem;
+    height: 3rem;
+    width: 8rem;
     padding: 1.6rem;
-    font-size: 3.9rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: var(--text-color);
     text-decoration: none;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
+
+/*home*/
 .home, .about, .works {
     background: transparent;
 }
@@ -116,16 +105,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 60vh;
+    height: 20vh;
     margin: 2rem auto 6rem auto;
 }
 .home .conteiner {
-    margin-top: 7.2rem;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
     justify-items: center;
 }
@@ -134,54 +121,57 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.2rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .home .conteiner h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 .home .conteiner .foto img {
-    width: 18rem;
+    width: 12rem;
     height: auto;
     border-radius: 60%;
     background-size: contain;
-    margin: 0 auto;
     display: block;
     }
 
-    img {
+img {
         box-shadow: 5px 15px 25px 5px rgba(155, 147, 147, 0.8);
 }
 .section-text-dis {
+    margin: 3rem;
+}
+.works-h, .about-h, .skills-h{
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    margin: 5rem;
-    width: 85%;
+    height: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
 }
 
-.section-text-dis .text-dis-front p{
-    font-size: 1.5rem;
+.text-dis-front p{
+    font-size: 1.3rem;
 }
 /*about*/
 .about {
-    width: 80%;
+    width: 100%;
     background: var(--bg-color);
     padding: 2rem;
-    margin: 9rem;
+    margin: 0;
 }
 .conteiner-about-me{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    width: 80%;
+    margin-top: 2.5rem;
 }
 
 .cont-descr-skills{
@@ -236,53 +226,45 @@ section {
 .React{
     width: 87%;
 }
-.text-ser{display: flex;
+.text-ser{
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6rem;
-    width:80%;
+    margin: 2rem;
+    width:100%;
 }
 .text-ser p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
 /*works*/
 .works {
-    min-height: 100vh; 
-    width: 80%;
-    display: grid;
-    grid-template-rows: 1fr auto;
+    width: 90%;
+
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
     z-index: 1;
-    margin: 7.4rem;
+    margin: 2.5rem;
 }
 
-.conteinerW {
+.conteiner-works {
     width: 100%;
     max-width: 1200px; 
+    margin-top: 7.5rem;
 }
-.works-h, .about-h, .skills-h{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 1.7rem;
-}
+
 .wrapper{
     width: 100%;
-    height: 100vh;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .conteinerW{
-    height: 400px;
+    height: 25rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -372,12 +354,12 @@ input:checked + label .description{
 }
 
 footer {
-    width: 100%;
+    width: 95%;
+    height: max-content;
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .cont-footer{
     text-align: center;
@@ -386,7 +368,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
     z-index: 1;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .cont-footer p{
@@ -411,3 +393,31 @@ footer {
     transition: .5s ease-in;
 }
 
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 769px) {
+    .cont-skills {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 1rem; 
+    }
+
+    .cont-skills a {
+        font-size: 3rem; /* Ajusta el tamaño de los iconos */
+    }
+
+    .cont-text-skils {
+        width: 100%; 
+        margin: 0.5rem 0; 
+    }
+
+    .skill-name {
+        font-size: 1.5rem; 
+    }
+
+    .skill-bar {
+        width: 100%; 
+    }
+}
