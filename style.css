@@ -421,3 +421,34 @@ footer {
         width: 100%; 
     }
 }
+
+@media (max-width: 425px) {
+    .cont-skills {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 0.8rem; 
+    }
+
+    .cont-skills a {
+        font-size: 2.5rem; 
+    }
+
+    .cont-text-skils {
+        width: 100%; 
+        margin: 0.5rem 0; 
+        font-size: 1rem; 
+    }
+
+    .skill-name {
+        font-size: 1.3rem; 
+    }
+
+    .skill-bar {
+        width: 100%; 
+        height: 0.8rem; 
+    }
+
+    .skill {
+        padding: 1rem; 
+    }
+}
