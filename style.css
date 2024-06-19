@@ -405,7 +405,7 @@ footer {
     }
 
     .cont-skills a {
-        font-size: 3rem; /* Ajusta el tamaño de los iconos */
+        font-size: 3rem; 
     }
 
     .cont-text-skils {
@@ -423,32 +423,118 @@ footer {
 }
 
 @media (max-width: 425px) {
-    .cont-skills {
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto; 
-        gap: 0.8rem; 
+    .main-container {
+        width: 100%;
+      }
+    .header {
+        width: 100%;
+        margin: 1.5rem;
     }
 
-    .cont-skills a {
-        font-size: 2.5rem; 
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .cont-text-skils {
-        width: 100%; 
-        margin: 0.5rem 0; 
+    nav a {
         font-size: 1rem; 
+        margin-bottom: 0.5rem; 
     }
 
-    .skill-name {
-        font-size: 1.3rem; 
+    .box-cv {
+        height: 2.5rem; 
+        width: 3rem; 
+        border-radius: 0px 20px; 
     }
 
-    .skill-bar {
-        width: 100%; 
-        height: 0.8rem; 
-    }
-
-    .skill {
+    .logo {
+        height: 2.5rem; 
+        width: 6rem; 
         padding: 1rem; 
+        font-size: 2rem; 
     }
-}
+    .home {
+        height: auto;
+        margin: 1rem auto 3rem auto;
+    }
+
+    .home .conteiner {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+        gap: 0.5rem; 
+    }
+
+    .home .conteiner h1 {
+        font-size: 1.8rem; 
+    }
+
+    .home .conteiner h3 {
+        font-size: 1.2rem; 
+    }
+
+    .home .conteiner .foto img {
+        width: 8rem; 
+    }
+
+    .section-text-dis {
+        margin: 1.5rem; 
+    }
+
+    .works-h, .about-h, .skills-h {
+        font-size: 1rem; 
+        margin-top: 0.5rem; 
+    }
+   
+    .text-ser {
+        flex-direction: column; 
+        margin: 1rem; 
+    }
+    .text-ser p {
+        font-size: 1rem; 
+        text-align: center; 
+        margin: 0.5rem 0; 
+    }
+    .conteiner-works {
+       
+            margin-top: 2.5rem; 
+        }
+    
+    .wrapper {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+    
+    .conteinerW {
+            height: auto;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+    .card {
+            width: 90%;
+            margin: 1rem 0; 
+            box-shadow: 3px 3px 10px -3px rgba(196, 192, 192, 0.8);
+        }
+    
+    .card > .row {
+            flex-direction: column; 
+            align-items: center;
+        }
+    
+    .card > .row > .icon {
+            margin: 10px 0; 
+        }    
+    .card > .row > .description {
+            width: 100%; 
+            height: auto; 
+            text-align: center; 
+    }
+    
+    input:checked + label {
+            width: 100%;
+    }
+    }
+
